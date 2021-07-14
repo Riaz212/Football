@@ -59,3 +59,25 @@ body{
     color: white;
     font-size: 45px;
 }
+/* player grid area */
+.grid-item{
+    width: 300px;
+    height: 426px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px;
+}
+/* three item grid for each line */
+#grid-container{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+}
+/* player photo */
+.grid-item img{
+    width: 100%;
+}
+.grid-item h1, p{
+    margin: 0px 5px;
+}
+.player-img{
+    margin: 5px 5px;
+}
