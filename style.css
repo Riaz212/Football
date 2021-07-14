@@ -1,0 +1,61 @@
+/* Set body color */
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #ddd;
+}
+/* Add bg color and some style in the main header */
+#flex-row{
+    background-color: #2D25A0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.banner-photo{
+    width: 556px;
+    height: 438px;
+    left: 200px
+}
+.watch-live-btn{
+    background-color: #E02C6D;
+    width: 168px;
+    height: 44px;
+    text-decoration: none;
+    padding: 10px 24px;
+    color: white;
+}
+#main_header div .copa-title{
+    width: 445px;
+    height: 230px;
+    line-height: 2;
+    color: #ffffff;
+    font-size: 40px;
+}
+/* responsive */
+@media (min-width: 900px) {
+    main{
+        margin: 0px 150px;
+    }
+}
+@media (max-width: 768px) {
+    #flex-row{
+        justify-content: unset;
+    }
+    .header-content{
+     margin-left: 15px;
+    }
+    .header-content{
+        margin-bottom: 30px;
+    }   
+    .banner-photo{
+        width: 329px;
+        height: 259px;
+       margin: auto;
+    }
+}
+.first-section-heading{
+    font-family: Poppins;
+    font-weight: bold;
+    color: white;
+    font-size: 45px;
+}
