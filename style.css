@@ -6,6 +6,7 @@ body{
     margin: 0px;
     padding: 0px;
     background-color: #ddd;
+    font-family: 'Poppins', sans-serif;
 }
 /* Add bg color and some style in the main header */
 #flex-row{
@@ -14,6 +15,7 @@ body{
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
+/* custom property */
 :root{
     --box-shadow-color: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -49,6 +51,9 @@ body{
     }
     footer > div {
         margin: 0px 300px;
+    }
+    #ranking{
+        margin: 0px 150px;  
     }
 }
 @media (max-width: 768px) {
@@ -106,9 +111,12 @@ margin-left: 28px;
 .player-img{
     margin: 5px 5px;
 }
+.player-img img {
+    transition: transform .2s;
+}
 .grid-item p {
     color: #000000a3;
-    font-family: -webkit-body;
+    font-size: 15px;
 }
 .grid-item h1 {
     margin: 10px 0px;
@@ -125,15 +133,28 @@ margin-left: 28px;
 }
 #flex-footer-item div{
     margin: 0px 10px;
-    background-color: #c5c5c5;
-    border-radius: 50%;
-    padding: 9px;
 }
 .social-icons{
-font-size: 20px;
-color: #0000007a;
+font-size: 33px;
+color: #525252;
 }
 /* effect */
 .banner-photo:hover{
     transform: scale(1.5);
+}
+.player-img:hover img{
+    transform: scale(1.3);
+}
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    border-bottom: 1px solid #c3c1c1;
+    padding: 20px;
+}
+td {
+    text-align: center;
+    font-size: 18px;
 }
