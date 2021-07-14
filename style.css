@@ -55,6 +55,9 @@ body{
     #ranking{
         margin: 0px 150px;  
     }
+    .grid-container{
+        margin-left: 28px;
+    }
 }
 @media (max-width: 768px) {
     #flex-row{
@@ -99,7 +102,6 @@ body{
 .grid-container{
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-margin-left: 28px;
 }
 /* player photo */
 .grid-item img{
